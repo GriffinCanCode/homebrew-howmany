@@ -9,9 +9,7 @@ class Howmany < Formula
   depends_on "rust" => :build
 
   def install
-    cd "howmany-core" do
-      system "cargo", "install", *std_cargo_args
-    end
+    system "cargo", "install", *std_cargo_args
   end
 
   test do
