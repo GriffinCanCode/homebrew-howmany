@@ -5,9 +5,11 @@ This is a Homebrew tap for the [HowMany](https://github.com/GriffinCanCode/howma
 ## Installation
 
 ```bash
-brew tap GriffinCanCode/howmany
-brew install howmany
+brew install GriffinCanCode/howmany/howmany
 ```
+
+Homebrew taps this repository as part of that command. `howmany` is not in
+homebrew-core, so a bare `brew install howmany` will not find it.
 
 ## About HowMany
 
@@ -15,8 +17,7 @@ HowMany is a fast, intelligent code analysis tool with parallel processing, cach
 
 ## Formula
 
-The formula is located at `Formula/howmany.rb` and builds from the official GitHub releases.
-
-## Updates
-
-This tap is automatically updated when new versions of HowMany are released.
+`Formula/howmany.rb` builds from the official GitHub release tarballs. It is
+generated, not hand-maintained: the `update-homebrew-formula` job in the main
+repository's release workflow copies `packaging/howmany.rb` here on every `v*`
+tag with that release's url and checksum stamped in. Edit it there, not here.
