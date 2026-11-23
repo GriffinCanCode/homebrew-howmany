@@ -1,8 +1,8 @@
 class Howmany < Formula
   desc "Fast, intelligent code analysis tool with parallel processing and visualizations"
   homepage "https://github.com/GriffinCanCode/howmany"
-  url "https://github.com/GriffinCanCode/howmany/archive/refs/tags/v3.1.0.tar.gz"
-  sha256 "84295df6ede4da7d9c3e9cb8bd2ff8290f340e96e13735231155ae6840dea381"
+  url "https://github.com/GriffinCanCode/howmany/archive/refs/tags/v3.2.0.tar.gz"
+  sha256 "ab15d5f11949b5057794181c3ce4130549cebba5d2144811d32177b10439611e"
   license "MIT"
   head "https://github.com/GriffinCanCode/howmany.git", branch: "main"
 
